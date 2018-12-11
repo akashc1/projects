@@ -1,0 +1,33 @@
+Akash Chaurasia
+
+achaura1@jhu.edu
+
+1.)
+To compile, type in the command line:
+make
+
+To run, type in the command line:
+./db <name of text file to read from>
+
+example:
+make
+./db db.txt
+
+2.)
+One design choice I made was for the function for choice l. I used an array of 5 integers, each representing whether or not one of the 5 diseases was requested by the user.
+For example, if a user input "CF SC FH", the array would be {0, 1, 1, 0, 1}. This simplified the loops I used to load diseased patients in another array, or at least made
+them many fewer lines of code.
+
+I also made the design choice to use bubble sort to sort the IDs of the diseased patients, since it was the easiest to implement and I figured that even though it is the slowest,
+hopefully the program will be tested using few enough patients that the inefficiency of bubble sort won't be too noticable.
+
+I was challenged by the function to print the patients' information in binary representation in a file, since there is no easy way to do that in C. However, I figured it out
+using bit masking and shifting and loops.
+
+3.)
+One possible useful function would be to sort the patients based on how many diseases they are confirmed to have. Insurance companies would likely find this useful since they
+often use big data to determine how much they should charge for their premiums, which would be more if a patient has more diseases.
+
+Another possible function would be to report, when two patients are being evaluated to see if their offspring would have a certain diseases, the probability that the theoretical
+child has the disease (using Mendelian genetics). For example, if both potential parents are positive for a recessive disease, the child has a 100% chance of getting that disease.
+
