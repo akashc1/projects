@@ -26,8 +26,8 @@
 int main(int argc, char *argv[]) {
 
   // open file pointer and get number of patients in file
-  FILE *db;
-  int num_patients;
+  FILE *db = NULL;
+  int num_patients = 0;
   if (argc > 1) { // make sure the argument we're about to read exists                                                                                                                                             
     db = fopen(argv[1], "r");
     if (!db) {
