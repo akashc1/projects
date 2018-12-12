@@ -23,7 +23,7 @@ public:
     ChessGame(std::string filename, int gameType);
     ChessGame(const ChessGame &old);
     
-    void save(std::string filename, int gameType);
+    void save(std::string filename, int gameType) override;
     void run() override;
 
     // Perform a move from the start Position to the end Position

@@ -13,14 +13,15 @@ static const char *disease_codes[] = {"HU", "FH", "SC", "TS", "CF"};
 
 void print_menu() {
   printf(
-	 "n - display total number of patients in the database\n"
-	 "d - get the disease profile of a patient\n"
-	 "e - edit disease profile of a patient\n"
-	 "c - get the disease profile of crossover between two patients\n"
-	 "l - get IDs and average age of all patients suffering from a list of given diseases\n"
-	 "s - save the database to a file\n"
-	 "q - quit the program\n"
-	 "Enter letter choice -> \n");
+         "n - display total number of patients in the database\n"
+         "d - get the disease profile of a patient\n"
+         "e - edit disease profile of a patient\n"
+         "c - get the disease profile of crossover between two patients\n"
+         "l - get IDs and average age of all patients suffering from a list of"
+         "given diseases\n"
+         "s - save the database to a file\n"
+         "q - quit the program\n"
+         "Enter letter choice -> \n");
 }
 
 void output_n(int num_patients) {

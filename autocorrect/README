@@ -1,8 +1,5 @@
 Akash Chaurasia
-601.220 (02)
-Homework 6
-November 1, 2017
-
+akashc@jhu.edu
 
 1.) Compile main function:
     make
@@ -11,6 +8,9 @@ November 1, 2017
 
     Run main function:
     ./ac
+
+    Quit:
+    quit
 
 
 2.) Compile & run test functions:

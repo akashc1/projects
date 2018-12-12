@@ -175,7 +175,8 @@ int King::valid_move_shape(Position start, Position end,
     return SUCCESS;
   } else if ((start.y == end.y) && (abs((int)(start.x - end.x)) == 1)) {
     return SUCCESS;
-  } else if ((abs((int)(start.x - end.x)) == 1) && (abs((int)(start.y - end.y) == 1))) {
+  } else if ((abs((int)(start.x - end.x)) == 1)
+                && (abs((int)(start.y - end.y)) == 1)) {
     return SUCCESS;
   }
   //moves more than one space (which is invalid), return 0

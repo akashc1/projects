@@ -4,3 +4,5 @@ akashc@jhu.edu
 RUN/COMPILATION
 Compile with make
 Then run with ./play 
+
+During a turn, input 'board' to enable/disable the display of the board

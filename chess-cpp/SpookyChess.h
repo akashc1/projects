@@ -24,8 +24,8 @@ public:
   // Perform a move from the start Position to the end Position                                        
   // The method returns an integer with the status                                                     
   // >= 0 is SUCCESS, < 0 is failure                                                                   
-  int make_move(Position start, Position end, int speak);
-  void save(std::string filename, int gameType);
+  int make_move(Position start, Position end, int speak) override;
+  void save(std::string filename, int gameType) override;
   // Reports whether the chess game is over                                                            
    void move_parsing(std::string thing);
    void ghost_mover() override;
