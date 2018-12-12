@@ -1,0 +1,25 @@
+Akash Chaurasia
+601.220 (02)
+Homework 6
+November 1, 2017
+
+
+1.) Compile main function:
+    make
+    OR:
+    make ac
+
+    Run main function:
+    ./ac
+
+
+2.) Compile & run test functions:
+    make test
+
+NOTE: I have included the data folder and the tests folder from the assignment from the public repository since I hardcoded the file names for loading the dictionary and the given test outputs. The test functions write .txt files against which the given files are compared.
+
+
+
+3.) One possible improvement would be to, when a new edit is made, ensure that it does not already exist in the vector of already fabricated edits, to decrease the total size of the vector since it currently allows duplicates. This might make the program faster, since it would have to iterate through fewer elements in the known function when looking for edits that match elements of the dictionary map. However, since it would have to check if every edit already exists, there is a chance that it would also slow it down.
+
+Another possible improvement would be to, if the word input already exists in the dictionary, not ask "Did you mean <word>?", but rather indicate somehow that the word is correct and that no correction is needed. 
