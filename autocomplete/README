@@ -1,9 +1,9 @@
 Akash Chaurasia
-achaura1
 akashc@jhu.edu
 
 1.)
 To compile the program, just enter 'make' into the command line
+The program is called 'ac', so just enter './ac' to run, and EOF (CTRL+D) to exit.
 
 Please note that the sorting algorithm is quite slow, so entering any input right after entering "./ac" may cause a crash.
 The program will enter a new line character to indicate when the sort is indicated, and that it is ready for input. PLEASE

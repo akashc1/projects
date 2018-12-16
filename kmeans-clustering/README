@@ -16,6 +16,5 @@ Other comments:
       -I have included the data and tests folders given to us because they are used for the test functions.
       -Some of the test functions make .txt files to be compared to the given test files.
       -'make clean' will get rid of any text files in the main folder (which would be created by the test functions)
-      -'make clean' will get rid of the gitlog.txt, so please be careful!
       -An improvement to the program (for the sake of generating the most accurate clusters) might be to assign random centroids at each iteration (resulting in 300x300 total iterations of updating centroids).
        Although this method would take more time and processes, it would probably result in tighter clusters (lower minimum inertia) since it is a more thorough approach.

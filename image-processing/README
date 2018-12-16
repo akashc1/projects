@@ -12,12 +12,12 @@ The Makefile also includes a -g tag, so valgrind can be run on this program by t
 
 DESIGN CHOICES AND CHALLENGES
 Choices:
-- We modularized our code so that our main has as little code as possible. This helped us locate errors later on.
-- We coded this assignment one function at a time and tested it incrementally (unit testing). This also helped localize errors.
-- We chose to return a pixel array instead of an image for the blur and sharpen functions, which helped with memory allocation issues.
+- I modularized the code so that the main has as little code as possible. This helped me locate errors later on.
+- I coded this assignment one function at a time and tested it incrementally (unit testing). This also helped localize errors.
+- I chose to return a pixel array instead of an image for the blur and sharpen functions, which helped with memory allocation issues.
 
 Challenges:
-- Gaussian blur was quite challenging; it took a fair amount of time for us to logic out how to do it.
-- Figuring out whether something was in bounds for blur was very difficult. We ended up making a whole other method just for that.
+- Gaussian blur was quite challenging; it took a fair amount of time for me to logic out how to do it.
+- Figuring out whether something was in bounds for blur was very difficult. I ended up making a whole other method just for that.
 - Keeping track of alloc'd memory was quite tedious, and took a while to debug.
 -Figuring out how to change the image (for example the data array) without forgetting to free allocated heap memory
