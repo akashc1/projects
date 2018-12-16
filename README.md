@@ -2,7 +2,9 @@
 
 ## Akash Chaurasia
 ### akashc@jhu.edu
-A collection of projects I have worked on or am currently working on
+A collection of projects I have worked on or am currently working on.
+
+I am an undergraduate student at [Johns Hopkins University](https://www.jhu.edu/) studying Biomedical Engineering and Computer Science. I am interested in medical technology, specifically the application of machine learning and deep learning methods in healthcare. 
 
 ##### [Data Science](https://github.com/akashc1/projects/tree/master/data-science)
 Applying data science methods in Python on human biomedical data including ECG waveforms, MRI images, and action potential waveforms. Includes some machine learning techniques and frameworks such as [scikit-learn](https://scikit-learn.org/stable/) and others.
