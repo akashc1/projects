@@ -1,9 +1,6 @@
 /**
    Akash Chaurasia (achaura1)
-   achaura1@jhu.edu
-   601.220 (02)
-   Homework 6
-   November 1, 2017
+   akashc@jhu.edu
 */
 
 #include <iostream>
@@ -30,8 +27,7 @@ int file_compare(const string filename_a, const string filename_b);
 
 void write__insertion_a(void);
 
-void test_insertion_a();
-
+void test_insertion_a(); 
 void test_insertion_a();
 
 void write_insertion_apeple(void);

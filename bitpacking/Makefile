@@ -1,4 +1,5 @@
-# Sample Makefile
+# Akash Chaurasia
+# akashc@jhu.edu
 
 CC=gcc
 CFLAGS=-std=c99 -pedantic -Wall -Wextra

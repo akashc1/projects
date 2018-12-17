@@ -1,5 +1,3 @@
-// this is a header guard
-// we'll talk more about this later
 #ifndef INTERFACE_H
 #define INTERFACE_H
 
@@ -88,4 +86,3 @@ void output_patient_stats(int patient_ids[], int num_patients, int avg_age);
 
 
 #endif
-// end of header guard

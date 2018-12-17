@@ -1,9 +1,6 @@
 /**
    Akash Chaurasia (achaura1)
-   achaura1@jhu.edu
-   601.220 (02)
-   Homework 6
-   November 1, 2017
+   akashc@jhu.edu
 */
 
 #include "select.h"
@@ -85,7 +82,7 @@ string correct(const string user_input, const dictionary db) {
       //iterate through all existing edits in string vector
       for (unsigned int i = 0; i < k; i++) {
 	//for every pre-existing edit, create second iteration edits and add to vector
-	edits(all_edits[i], all_edits);                                                                                                                                                                          
+	edits(all_edits[i], all_edits);
       }
 
       //create suggestions map
@@ -108,9 +105,9 @@ string correct(const string user_input, const dictionary db) {
     } else { //one or more first iteration edits are present in the dictionary database
       //return first edit that is in the dictionary database that has the largest weight
       corrected = "Did you mean " + it->second + "?";
-    }                                                                                                                                                                                                            
-  }
+    }
 
+  }
   //return formatted string to be output
   return corrected;
 }

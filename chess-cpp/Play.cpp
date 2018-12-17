@@ -50,8 +50,6 @@ string collect_filename() {
     return f;
 }
 
-
-
 int main() {
 
     // Determine which game to play, and how to begin it

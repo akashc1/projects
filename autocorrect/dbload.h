@@ -1,8 +1,6 @@
 /**
    Akash Chaurasia
-   601.220 (02)
-   Homework 6
-   November 1, 2017
+   akashc@jhu.edu
 */
 
 #ifndef DBLOAD_H

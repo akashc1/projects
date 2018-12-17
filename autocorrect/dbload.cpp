@@ -1,9 +1,6 @@
 /**
    Akash Chaurasia (achaura1)
-   achaura1@jhu.edu
-   601.220 (02)
-   Homework 6
-   November 1, 2017
+   akashc@jhu.edu
 */
 
 #include "dbload.h"
@@ -12,17 +9,6 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-
-//declare functions used to make it easier to type
-using std::cout;
-using std::endl;
-using std::ifstream;
-using std::istringstream;
-using std::string;
-using std::getline;
-using std::vector;
-using std::map;
-
 
 /**
    Function to create a map of string to int (typedef'd to dictionary)

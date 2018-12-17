@@ -1,9 +1,6 @@
 /**
    Akash Chaurasia (achaura1)
-   achaura1@jhu.edu
-   601.220 (02)
-   Homework 6
-   November 1, 2017
+   akashc@jhu.edu
 */
 #ifndef SELECT_H
 #define SELECT_H

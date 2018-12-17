@@ -1,10 +1,6 @@
 /** 
     Akash Chaurasia
-    601.220 (02)
-    09/26/2017
-    Homework 4
-    achaura1
-    achaura1@jhu.edu
+    akashc@jhu.edu
 */
 
 #include <stdio.h>
@@ -406,10 +402,7 @@ void choice_e(unsigned int patients[], int num_patients) {
 	patients[id_index] -= current_disease_code << disease_code;
 	patients[id_index] += new_disease_code << disease_code;
       }
-  
     }
-    
-    
   }
 }
 
@@ -429,7 +422,6 @@ void choice_s(unsigned int patients[], int num_patients) {
   prompt_s();
   char output_filename[255];
 
-
   fgets(output_filename, 255, stdin);
   
   char outfile_name[255];
@@ -443,10 +435,8 @@ void choice_s(unsigned int patients[], int num_patients) {
     for (int j = 31; j >= 0; j--) {
       unsigned int bit = (patients[i] >> j) & 1;
       fprintf(outfile, "%u", bit);
-  
     }
     fprintf(outfile, "\n");
-  
   }
 
   // close file!

@@ -1,10 +1,6 @@
 /**
    Akash Chaurasia
-   601.220 (02)
-   09/26/2017
-   Homework 4
-   achaura1
-   achaura1@jhu.edu
+   akashc@jhu.edu
 */
 
 #include <stdio.h>

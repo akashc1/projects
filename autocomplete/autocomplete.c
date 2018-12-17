@@ -1,6 +1,6 @@
 /**
    Akash Chaurasia
-   achaura1@jhu.edu
+   akashc@jhu.edu
  */
 
 #include <stdio.h>

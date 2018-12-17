@@ -1,10 +1,6 @@
 /**
    Akash Chaurasia
-   achaura1
-   601.220 (02) Fall 2017
-   Homework 6
-   achaura1@jhu.edu
-   November 1, 2017
+   akashc@jhu.edu
 */
 
 #include <iostream>
@@ -35,6 +31,6 @@ int main() {
     cout << corrected <<endl;
     cin >> name;
   }
-  return 0;
+  return EXIT_SUCCESS;
 }								       
 

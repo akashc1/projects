@@ -1,7 +1,6 @@
 /**
-   Skeleton of the Autocomplete assignment
-   that allows for loading and writing
-   a datafile
+ Akash Chaurasia
+ akashc@jhu.edu
  */
 
 #include <stdio.h>
@@ -14,7 +13,6 @@
 void double_swap(char queries[][MAX_QUERY_LENGTH], unsigned long weights[],
 		 int x, int y);
 /**
-   DO NOT MODIFY
    Function to load data file consisting
    of words and their frequencies
 
@@ -47,7 +45,6 @@ void load(char queries[][MAX_QUERY_LENGTH], unsigned long weights[],
 
 
 /**
-   DO NOT MODIFY
    Function to write queries and weights into a data file
 
    @param queries array of strings of max length 255
@@ -254,9 +251,6 @@ void print_matches(char queries[][MAX_QUERY_LENGTH], unsigned long weights[],
  */
 int main() {
 
-  // YOU MAY ADD CODE INBETWEEN BUT
-  // DO NOT MODIFY THE FOLLOWING LINES OF CODE
-
   // name of the data file  
   char *data_file = "data/wiktionary.txt";
   char *sorted_file = "data/sorted_wiktionary.txt";
@@ -312,7 +306,6 @@ int main() {
       
   }
   
-  // END OF DO NOT MODIFY
   // end main function
   return 0;
 }
