@@ -7,7 +7,8 @@ akashc@jhu.edu
     Run:
     $ ./cluster <number of clusters> <input file name> <output file name>
 
-    The 'data' directory has 4 .txt files that can be used as input.
+    The 'data' directory has 4 .txt files that can be used as input, but any
+    file of a similar format should work fine.
     
 
 2.) Compile and run tests:

@@ -6,3 +6,6 @@ Compile with make
 Then run with ./play 
 
 During a turn, input 'board' to enable/disable the display of the board
+
+All moves are made using the positions, the game will prevent incorrect
+moves.

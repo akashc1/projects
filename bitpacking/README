@@ -9,6 +9,8 @@ make
 To run, type in the command line:
 ./db <name of text file to read from>
 
+db.txt is provided as a text file to use
+
 example:
 make
 ./db db.txt

@@ -7,8 +7,7 @@ Since a Makefile is included, simply type 'make' to compile the program.
 RUNNING THE PROGRAM
 A 'main' executable file is created after compilation. Type './main' to run the program
 
-The Makefile also includes a -g tag, so valgrind can be run on this program by typing 'valgrind --leak-check=full ./main'
-
+a provided image is 'data/nika.ppm' which can be used to test the functionality.
 
 DESIGN CHOICES AND CHALLENGES
 Choices:
