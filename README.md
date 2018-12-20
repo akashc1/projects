@@ -2,7 +2,7 @@
 
 ## Akash Chaurasia
 ### akashc@jhu.edu
-A collection of projects I have worked on or am currently working on.
+A collection of projects I have worked on or am currently working on. I mostly work in Python, C, and C++, with experience in Java. My preferred languages are C++ and Python.
 
 I am an undergraduate student at [Johns Hopkins University](https://www.jhu.edu/) studying Biomedical Engineering and Computer Science. I am interested in medical technology, specifically the application of machine learning and deep learning methods in healthcare. 
 
