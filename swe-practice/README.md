@@ -1,7 +1,6 @@
-# Projects
+# Software Engineering Projects
 
-## Akash Chaurasia
-### akashc@jhu.edu
+## A set of programming projects I completed to strengthen my skills with C/C++
 
 ##### [Autocomplete](https://github.com/akashc1/projects/tree/master/swe-practice/autocomplete)
 A straightforward program in C that completes an input word. Uses a space-delmited text file with words and their respective weights (number of occurences in books in the [Project Gutenberg library](https://www.gutenberg.org/)), and recommends a completed word based on this weight. 
