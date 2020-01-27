@@ -4,6 +4,10 @@
 *.class
 *.o
 
+# Model files #
+###############
+*.torch
+
 
 # Compressed repositories #
 ###########################
