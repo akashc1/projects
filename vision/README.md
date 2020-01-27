@@ -1,7 +1,5 @@
-# Projects
+# Computer Vision
 
-## Akash Chaurasia
 ### akashc@jhu.edu
 
-##### [Vision](https://github.com/akashc1/projects/tree/master/vision)
 Some vision tasks I have taken on. Most of it is lower level stuff I implemented to get an understanding of how stuff works. Most of these things are probably in OpenCV.
