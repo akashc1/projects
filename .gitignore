@@ -1,0 +1,16 @@
+
+# Object/other compiled files #
+##############################
+*.class
+*.o
+
+
+# Compressed repositories #
+###########################
+*.zip
+*.tar
+
+# OS files #
+############
+*.DS_Store
+
