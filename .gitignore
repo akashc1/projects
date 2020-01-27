@@ -9,6 +9,10 @@
 *.torch
 
 
+# Python things (notebook checkpoints, cache) #
+*__pycache__*
+*ipynb_checkpoints*
+
 # Compressed repositories #
 ###########################
 *.zip
