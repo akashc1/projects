@@ -9,7 +9,7 @@ A straightforward program in C that completes an input word. Uses a space-delmit
 ##### [Autocorrect](https://github.com/akashc1/projects/tree/master/swe-practice/autocorrect)
 C++ program that corrects a given input. Uses a space-delmited text file with words with their respective weights. It calculates various edits of the input word (insertions, deletions, substitutions, transpositions) to find real words and makes a recommendation based on weight.
 
-##### [Bitpacking](https://github.com/akashc1/projects/tree/master/bitpacking)
+##### [Bitpacking](https://github.com/akashc1/projects/tree/master/swe-practice/bitpacking)
 A C program that uses bitpacking to store information on patients and their disease conditions for 5 diseases. Quite rudimentary but used to learn binary options in C. Can defintely be expanded for other applications.
 
 ##### [Chess](https://github.com/akashc1/projects/tree/master/swe-practice/chess-cpp)
