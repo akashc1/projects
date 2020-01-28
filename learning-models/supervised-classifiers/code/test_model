@@ -1,0 +1,11 @@
+#!/bin/bash
+
+test_data="../data/speech.mc.dev"
+
+model_file="speech.mc.model"
+
+prediction_file="speech.mc.predictions"
+
+python3 main.py --test-data $test_data --model-file $model_file --mode test --predictions-file $prediction_file
+
+python3 compute_accuracy.py $test_data $prediction_file

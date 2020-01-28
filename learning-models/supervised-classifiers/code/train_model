@@ -1,0 +1,7 @@
+#!/bin/bash
+
+train_data="../data/speech.mc.train"
+
+model_file="speech.mc.model"
+
+python3 main.py --train-data $train_data --model-file $model_file --mode train $1 $2
