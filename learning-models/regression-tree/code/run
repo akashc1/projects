@@ -1,0 +1,24 @@
+#/usr/bin/bash
+
+MODEL="rtree.model"
+TRAIN="../data/train.txt"
+EPOCHS=100
+LAMBDA=0.1
+TEST="../data/dev.txt"
+PRED="predictions.txt"
+
+TRAINCMD="--mode train \
+          --algorithm gradient-boosted-regression-tree \
+          --model-file $MODEL \
+          --train-data $TRAIN \
+          --n-estimators $EPOCHS \
+          --regularization-parameter $LAMBDA"
+
+TESTCMD="--mode test \
+         --model-file $MODEL \
+         --test-data $TEST \
+         --predictions-file $PRED"
+
+python main.py $TRAINCMD
+python main.py $TESTCMD
+
