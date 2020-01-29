@@ -1,0 +1,17 @@
+#!/bin/bash
+
+TRAINDATA="../data/image_3.jpg"
+MDLFILE="im3.mdl"
+PRDFILE="im3.pred"
+VPRDFILE="im3_viz.png"
+ALG="mrf"
+
+
+python main.py --algorithm $ALG \
+               --model-file $MDLFILE \
+               --predictions-file $PRDFILE \
+               --visualize-predictions-file $VPRDFILE \
+               --train-data $TRAINDATA \
+               --num-states 4 \
+               --n-em-iterations 3 \
+               --n-vi-iterations 3
