@@ -1,6 +1,6 @@
 # Regression Trees
 
-These seemed intriguing to me and I wanted to try to use these for regression instead of classification to see what happens. For an in-depth analysis of the models, please see the [Regression Experiments document.](https://github.com/akashc1/projects/blob/master/learning-models/regression-tree/Regression-Experiments.pdf)
+Decision trees seemed intriguing to me and I wanted to use them for regression instead of classification to see what happens. For an in-depth analysis of the models, please see the [Regression Experiments document.](https://github.com/akashc1/projects/blob/master/learning-models/regression-tree/Regression-Experiments.pdf)
 
 ### Models implemented: regression tree, gradient-boosted regression tree (GBRT)
 
