@@ -1,0 +1,5 @@
+#!/bin/bash
+
+LABELED='../data/'
+
+python accuracy.py --labeled "${LABELED}${1}" --predicted $2

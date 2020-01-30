@@ -1,0 +1,15 @@
+#!/bin/bash
+
+K=5
+DEV="dev"
+PREDS="lle-knn-preds.txt"
+ALG="lle"
+DIM=300
+ALG_K=10
+
+python3 main.py --knn-k $K \
+                --test-split $DEV \
+                --predictions-file $PREDS \
+                --dr-algorithm $ALG \
+                --target-dim $DIM \
+                --lle-k $ALG_K
