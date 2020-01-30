@@ -1,43 +1,18 @@
-# Image Segmentation --- Markov Random Fields, Expectation Maximization
+# Image Segmentation - Markov Random Fields, Expectation Maximization
 
 I wanted to experiment with graphical models and Markov Random Fields (MRF) seemed very interesting. I found a [paper describing EM for segmentation](https://hal.inria.fr/inria-00072132/document) as well as the Potts model. This model is used more for statistical mechanics but seemed useful for segmentation as well.
 
 ![Potts model](figs_for_latex/potts_model.png)
 
-#### Generating sample data
-
-I used an RNG and added noise and a cosine function to generate data that looks like this:
-
-![sample-data](code/output_4_0.png)
+This is a figure describing the Potts model used.
 
 
-#### Playing with max depth
+### Results
 
-A max depth of 3 had the following sort of underfitting:
+Here are some examples of the results of the segmentation:
 
-![depth-3](code/output_6_0.png)
+![image 1 results](src/im1_viz.png)
 
-And a max depth of 20 had pretty strong overfitting:
+![image 2 results](src/im2_viz.png)
 
-![depth-20](code/output_6_4.png)
-
-
-### GBRT - Results of boosting
-
-I had never implemented any sort of boosting algorithm so this was very interesting to play around with, especially considering that almost all of the learners (regression trees) are essentially fitting residual error.
-
-#### Playing with number of boosting iterations
-
-Similar to the depth in the regular regression tree, the GBRT with only 2 boosting iterations showed strong underfitting:
-
-![gbrt-iter-2](code/output_8_0.png)
-
-And with 100 iterations, the overfitting was very strong:
-
-![gbrt-iter-2](code/output_8_4.png)
-
-#### Regularization in regression trees
-
-A regularization parameter of 0.6 resulted in a pretty nice fit of the generated data:
-
-![gbrt-reg](code/output_10_2.png)
+![image 3 results](src/im3_viz.png)
