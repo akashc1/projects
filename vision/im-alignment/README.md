@@ -16,7 +16,7 @@ The circle detection was just based on my interest in the Hough voting methods f
 
 Template matching seemed very straightforward to me but as I expected, there were the edge cases I had to think about which was a quick and interesting challenge.
 
-<img src="./label-circ-match/output/king.png" alt="text" width="200"/>
+![temp-match1](./label-circ-match/output/text.png)
 ![temp-match2](./label-circ-match/output/king.png)
 
 #### [Image Alignment, RANSAC Feature Matching, and Stitching](./im-alignment)
