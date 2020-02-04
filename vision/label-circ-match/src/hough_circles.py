@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 
 """
-Akash Chaurasia (achaura1)
-achaura1@jhu.edu
-CS 461 Fall 2019
+Akash Chaurasia
+akashc@jhu.edu
 """
 
 import cv2
@@ -145,9 +144,6 @@ def find_circles(image, accum_array, radius_values, hough_thresh):
         cv2.circle(c_img, (x_vals[i], y_vals[i]), radius_values[r_inds[i]], (0, 255, 0), thickness=2)
 
     return circ_list, c_img
-
-
-
 
 
 def main(argv):

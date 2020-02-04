@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 
 """
-Akash Chaurasia (achaura1)
-achaura1@jhu.edu
-CS 461 Fall 2019
+Akash Chaurasia
+akashc@jhu.edu
 """
 
 import cv2

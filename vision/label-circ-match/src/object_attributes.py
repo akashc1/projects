@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
-Akash Chaurasia (achaura1)
-achaura1@jhu.edu
-CS 461 Fall 2019
+Akash Chaurasia
+akashc@jhu.edu
 """
 
 import cv2
@@ -41,6 +40,11 @@ class EQTable:
         if p1 != p2:
             l[p1] = p2
 
+
+"""
+Turns grayscaled 8-bit image into binary
+using a given threshold value
+"""
 def binarize(gray_image, thresh_val):
     binary_image = gray_image.copy()
 
@@ -72,6 +76,11 @@ def get_neighbors(labeled_image, i, j):
 
     return labels, coords
 
+"""
+Sequential labeling algorithm
+
+Takes in binary image, returns sequentially labeled image
+"""
 def label(binary_image):
 
     # initialize variables used for labeling
@@ -82,6 +91,7 @@ def label(binary_image):
     # object used to store equivalent labels
     equivs = EQTable()
 
+    # raster search
     for i in range(dims[0]):
         for j in range(dims[1]):
             if binary_image[i, j] != 0:
@@ -110,6 +120,12 @@ def label(binary_image):
 
     return im
 
+"""
+Takes sequentially labeled image
+
+Returns list of object attributes, describing
+the properties of each object (label) in labeled image
+"""
 def get_attribute(labeled_image):
 
     dims = labeled_image.shape
