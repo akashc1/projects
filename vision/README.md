@@ -16,6 +16,9 @@ The circle detection was just based on my interest in the Hough voting methods f
 
 Template matching seemed very straightforward to me but as I expected, there were the edge cases I had to think about which was a quick and interesting challenge.
 
+![temp-match1](./label-circ-match/output/text.png)
+![temp-match2](./label-circ-match/output/king.png)
+
 #### [Image Alignment, RANSAC Feature Matching](./im-alignment)
 
 This part came from my interest in image transformations and feature extraction. I implemented a Harris corner detector, a RANSAC algorithm to match corners from 2 images, and a least-squares method to solve for a transformation to align two given images.

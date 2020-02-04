@@ -105,11 +105,11 @@ def main(argv):
     img_name = argv[0]
     tpl_name = argv[1]
     
-    img = cv2.imread('data/' + img_name + '.png', cv2.IMREAD_COLOR)
-    tpl = cv2.imread('data/' + tpl_name + '.png', cv2.IMREAD_COLOR)
+    img = cv2.imread('../data/' + img_name + '.png', cv2.IMREAD_COLOR)
+    tpl = cv2.imread('../data/' + tpl_name + '.png', cv2.IMREAD_COLOR)
 
     coords, matched_img = find_matches(tpl, img, thresh=0.99)
-    cv2.imwrite('output/' + img_name + '.png', matched_img)
+    cv2.imwrite('../output/' + img_name + '.png', matched_img)
     print(coords)
 
 if __name__ == '__main__':
