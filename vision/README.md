@@ -19,9 +19,9 @@ Template matching seemed very straightforward to me but as I expected, there wer
 ![temp-match1](./label-circ-match/output/text.png)
 ![temp-match2](./label-circ-match/output/king.png)
 
-#### [Image Alignment, RANSAC Feature Matching](./im-alignment)
+#### [Image Alignment, RANSAC Feature Matching, and Stitching](./im-alignment)
 
-This part came from my interest in image transformations and feature extraction. I implemented a Harris corner detector, a RANSAC algorithm to match corners from 2 images, and a least-squares method to solve for a transformation to align two given images.
+This part came from my interest in image transformations and feature extraction. I implemented a Harris corner detector, a RANSAC algorithm to match corners from 2 images, and a least-squares method to solve for a transformation to align two given images. There's also a simple method of stitching the aligned images together.
 
 ![align-stack](./im-alignment/output/leuven_stacked.png)
 ![align-ransac](./im-alignment/output/leuven_RANSACstacked.png)
