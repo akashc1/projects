@@ -149,7 +149,7 @@ def find_circles(image, accum_array, radius_values, hough_thresh):
 def main(argv):
     img_name = argv[0]
 
-    img = cv2.imread('data/' + img_name + '.png', cv2.IMREAD_COLOR)
+    img = cv2.imread('../data/' + img_name + '.png', cv2.IMREAD_COLOR)
     gray_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
     edges = detect_edges(gray_image)
@@ -157,11 +157,11 @@ def main(argv):
     r_range = np.arange(25, 40)
 
     e_thresh, acc = hough_circles(edges, 0.6*np.amax(edges), r_range)
-    cv2.imwrite('output/' + img_name + "_edges.png", e_thresh * 255)
+    cv2.imwrite('../output/' + img_name + "_edges.png", e_thresh * 255)
     h_thresh = np.amax(acc) * 0.5
     c_list, c_img = find_circles(img, acc, r_range, h_thresh)
     print(c_list)
-    cv2.imwrite('output/' + img_name + '_circles.png', c_img)
+    cv2.imwrite('../output/' + img_name + '_circles.png', c_img)
 
 if __name__ == '__main__':
   main(sys.argv[1:])

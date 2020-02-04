@@ -8,9 +8,11 @@ Some vision tasks I have taken on. Most of it is lower level stuff I implemented
 
 This implementation of image labeling is pretty quick and can identify individual objects in an image. This is not a learning-based approach, rather a standard sequential labeling algorithm.
 
+![labeling](./label-circ-match/output/coins_labeled.png)
 
 The circle detection was just based on my interest in the Hough voting methods for circle/line detection, and the circle case seemed more interesting to me.
 
+![circ-detect](./label-circ-match/output/coins_circles.png)
 
 Template matching seemed very straightforward to me but as I expected, there were the edge cases I had to think about which was a quick and interesting challenge.
 
