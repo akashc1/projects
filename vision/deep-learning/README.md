@@ -38,8 +38,11 @@ A method I found rather interesting is [transfer learning](https://blogs.nvidia.
 
 ##### Results
 
-**Pre-trained network:** batch size 64, learning rate 0.005, 50 epochs  ** *Accuracy: 90.7% ** *
+**Pre-trained network:** batch size 64, learning rate 0.005, 50 epochs  **Accuracy: 90.7%**
+
+**From scratch network:** batch size 64, learning rate 0.005, 100 epochs **Accuracy: 73.2%**
 
 ##### Summary
-<img src="./label-circ-match/output/text.png" alt="text" width="200"/>
+
+Clearly, the pre-trained network greatly outperforms the network trained from scratch. These took a while to train, especially with the from-scratch network having 100 epochs, so in the future I will definitely be sure to use transfer learning if there are established pre-trained models I can adapt for a given application
 
