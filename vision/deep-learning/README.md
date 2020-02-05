@@ -6,7 +6,7 @@ Many people believe that deep learning can solve vision entirely. I'm not sure i
 
 Anybody who's used deep learning for vision has probably heard of [the MNIST dataset](http://yann.lecun.com/exdb/mnist/), which sets up the image classification task for handwritten digits. I wanted to do something a little different and found a fashion dataset of similar format.
 
-I played around with a few different configurations of networks, playing around with hyperparameters. Here's a table summaraizing the results:
+I played around with a few different configurations of networks and modulating hyperparameters. Here's a table summaraizing the results:
 
 Configuration | Accuracy on Validation Set
 ------------- | --------------------------
@@ -16,19 +16,18 @@ More epochs (10) | 88.3%
 Lower learning rate (0.001) | 85.9%
 Increased conv1 output dimensionality (32 channels) | 90.1%
 Add dropout layer after conv1 (p = 0.3) | 88.7%
-Combined network: batch size 64, epochs 10, learning rate 0.01, conv1 output 32 channels, added dropout layer (p = 0.3) | 88.0%
+
+**Combined network:** batch size 64, epochs 10, learning rate 0.01, conv1 output 32 channels, added dropout layer (p = 0.3) --- **Final Accuracy on Test set: 88.0%**
+
+##### Summary
+
+These experiments made a lot of sense. Here were my general conclusions:
+* Batch size isn't a huge determinant of the network's performance. I've generally seen 32 and 64 used as the most common batch sizes, and I'll probably stick with those unless I see convincing literature about it.
+* Increasing the number of epochs increased the accuracy on the validation set. This could be unreliable, since it's likely very data dependent; drastically increasing epochs seems like a very easy way to overfit the training set.
+* The lower learning rate likely kept the model from reaching a local minimum in the given number of epochs, or it may have found a different local minimum with worse accuracy.
+* The increased channel dimensionality output from the first convolution layer really increased the model's accuracy. This is a pretty simple model, so perhaps it has too much bias and is underfitting the data, which the added feature space mitigates.
+* Dropout increased accuracy, most likely by preventing co-adaptation of nodes in the model. 
 
 
 <img src="./label-circ-match/output/text.png" alt="text" width="200"/>
 
-![temp-match2](./label-circ-match/output/king.png)
-
-#### [Image Alignment, RANSAC Feature Matching, and Stitching](./im-alignment)
-
-This part came from my interest in image transformations and feature extraction. I implemented a Harris corner detector, a RANSAC algorithm to match corners from 2 images, and a least-squares method to solve for a transformation to align two given images. There's also a simple method of stitching the aligned images together.
-
-<img src="./im-alignment/output/leuven_stacked.png" alt="align-stack" width="600"/>
-
-<img src="./im-alignment/output/leuven_RANSACstacked.png" alt="align-ransac" width="600"/>
-
-<img src="./im-alignment/output/leuven_stitched.png" alt="align-stitched" width="600"/>
