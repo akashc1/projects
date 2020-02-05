@@ -1,18 +1,16 @@
 ## Deep Learning-based Computer Vision
 
-Many people believe that deep learning can solve vision entirely. I'm not sure if that is the case, but neural networks have solved a variety of difficult vision tasks in a variety of ways. I wanted to try some of them out.
+Many people believe that deep learning can solve vision entirely. I'm not sure if that is the case, but neural networks have solved a variety of difficult vision tasks in a variety of ways. I wanted to try some of them out. Original notebooks were run on [Google Colab](https://colab.research.google.com/) and can be found in `src`.
 
-#### [Image Labeling, Hough Circle Detection, Template Matching](./label-circ-match)
+### Part 1: Fashion MNIST
 
-This implementation of image labeling is pretty quick and can identify individual objects in an image. This is not a learning-based approach, rather a standard sequential labeling algorithm.
+Anybody who's used deep learning for vision has probably heard of [the MNIST dataset](http://yann.lecun.com/exdb/mnist/), which sets up the image classification task for handwritten digits. I wanted to do something a little different and found a fashion dataset of similar format.
 
-![labeling](./label-circ-match/output/coins_labeled.png)
+I played around with a few different configurations of networks, playing around with hyperparameters. Here's a table summaraizing the results:
 
-The circle detection was just based on my interest in the Hough voting methods for circle/line detection, and the circle case seemed more interesting to me.
-
-![circ-detect](./label-circ-match/output/coins_circles.png)
-
-Template matching seemed very straightforward to me but as I expected, there were the edge cases I had to think about which was a quick and interesting challenge.
+Configuration | Accuracy on Validation Set
+------------- | --------------------------
+Baseline model | 87.5%
 
 <img src="./label-circ-match/output/text.png" alt="text" width="200"/>
 
