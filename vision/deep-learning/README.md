@@ -2,9 +2,9 @@
 
 Many people believe that deep learning can solve vision entirely. I'm not sure if that is the case, but neural networks have solved a variety of difficult vision tasks in a variety of ways. I wanted to try some of them out. Original notebooks were run on [Google Colab](https://colab.research.google.com/) and can be found in `src`.
 
-### Part 1: Fashion MNIST
+### [Part 1: Fashion MNIST](fashion_mnist.pdf)
 
-Anybody who's used deep learning for vision has probably heard of [the MNIST dataset](http://yann.lecun.com/exdb/mnist/), which sets up the image classification task for handwritten digits. I wanted to do something a little different and found a fashion dataset of similar format.
+Anybody who's used deep learning for vision has probably heard of [the MNIST dataset](http://yann.lecun.com/exdb/mnist/), which sets up the image classification task for handwritten digits. I wanted to do something a little different and found a [fashion dataset of similar format.](https://github.com/zalandoresearch/fashion-mnist)
 
 I played around with a few different configurations of networks and modulating hyperparameters. Here's a table summaraizing the results:
 
@@ -17,7 +17,8 @@ Lower learning rate (0.001) | 85.9%
 Increased conv1 output dimensionality (32 channels) | 90.1%
 Add dropout layer after conv1 (p = 0.3) | 88.7%
 
-**Combined network:** batch size 64, epochs 10, learning rate 0.01, conv1 output 32 channels, added dropout layer (p = 0.3) --- **Final Accuracy on Test set: 88.0%**
+**Combined network:** batch size 64, epochs 10, learning rate 0.01, conv1 output 32 channels, added dropout layer (p = 0.3)
+**Final Accuracy on Test set: 88.0%**
 
 ##### Summary
 
