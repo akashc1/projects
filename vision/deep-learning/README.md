@@ -10,7 +10,14 @@ I played around with a few different configurations of networks, playing around 
 
 Configuration | Accuracy on Validation Set
 ------------- | --------------------------
-Baseline model | 87.5%
+Baseline model: batch size 64, epochs 3, learning rate 0.01, conv1 output 6 channels | 87.5%
+Increased batch size (32) | 87.4%
+More epochs (10) | 88.3%
+Lower learning rate (0.001) | 85.9%
+Increased conv1 output dimensionality (32 channels) | 90.1%
+Add dropout layer after conv1 (p = 0.3) | 88.7%
+Combined network: batch size 64, epochs 10, learning rate 0.01, conv1 output 32 channels, added dropout layer (p = 0.3) | 88.0%
+
 
 <img src="./label-circ-match/output/text.png" alt="text" width="200"/>
 
