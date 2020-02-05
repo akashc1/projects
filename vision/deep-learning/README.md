@@ -6,7 +6,9 @@ Many people believe that deep learning can solve vision entirely. I'm not sure i
 
 Anybody who's used deep learning for vision has probably heard of [the MNIST dataset](http://yann.lecun.com/exdb/mnist/), which sets up the image classification task for handwritten digits. I wanted to do something a little different and found a [fashion dataset of similar format.](https://github.com/zalandoresearch/fashion-mnist)
 
-I played around with a few different configurations of networks and modulating hyperparameters. Here's a table summaraizing the results:
+I played around with a few different configurations of networks and modulating hyperparameters. 
+
+##### Results
 
 Configuration | Accuracy on Validation Set
 ------------- | --------------------------
@@ -30,5 +32,14 @@ These experiments made a lot of sense. Here were my general conclusions:
 * Dropout increased accuracy, most likely by preventing co-adaptation of nodes in the model. 
 
 
+### [Part 2: Transfer Learning](caltech_101.pdf)
+
+A method I found rather interesting is [transfer learning](https://blogs.nvidia.com/blog/2019/02/07/what-is-transfer-learning/). I wanted to implement it using [MobileNetV2](https://arxiv.org/abs/1801.04381) on the [Caltech 101 Dataset](http://www.vision.caltech.edu/Image_Datasets/Caltech101/), which has 101 image classes. This ended up being a good PyTorch exercise.
+
+##### Results
+
+**Pre-trained network:** batch size 64, learning rate 0.005, 50 epochs  ***Accuracy: 90.7% ***
+
+##### Summary
 <img src="./label-circ-match/output/text.png" alt="text" width="200"/>
 
