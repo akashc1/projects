@@ -10,5 +10,5 @@ All of these lines intersect at the epipole. I found matches from both images (i
 
 Here's the results:
 
-![epi-results](./output/hopkins_epi.png)
+![epi-results](output/hopkins_epi.png)
 
