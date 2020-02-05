@@ -38,7 +38,7 @@ A method I found rather interesting is [transfer learning](https://blogs.nvidia.
 
 ##### Results
 
-**Pre-trained network:** batch size 64, learning rate 0.005, 50 epochs  ***Accuracy: 90.7% ***
+**Pre-trained network:** batch size 64, learning rate 0.005, 50 epochs  ** *Accuracy: 90.7% ** *
 
 ##### Summary
 <img src="./label-circ-match/output/text.png" alt="text" width="200"/>
