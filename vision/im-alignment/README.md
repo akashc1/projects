@@ -1,9 +1,20 @@
-### Image Alignment, RANSAC Feature Matching, and Stitching
+## Image Alignment, RANSAC Feature Matching, and Stitching
 
+I have worked with features before, but wanted to try to implement a corner detector. I also read a bit about image alignment and ran into RANSAC, which seemed like a cool method. 
 
+### Part 1: Corner Detection
 
-This part came from my interest in image transformations and feature extraction. I implemented a Harris corner detector, a RANSAC algorithm to match corners from 2 images, and a least-squares method to solve for a transformation to align two given images. There's also a simple method of stitching the aligned images together.
+Naturally I found the Harris Corner Detector. The intuition made sense to me (find regions which result in a large intensity change in any direction), but it took a while for me to understand how it leads to the eigenvalue-based classification.
 
-![align-stack](./im-alignment/output/leuven_stacked.png)
-![align-ransac](./im-alignment/output/leuven_RANSACstacked.png)
-![align-stitch](./im-alignment/output/leuven_stitched.png)
+I used the following parameters for the corner detection (evident in `src/image_alignment.py`):
+
+Window Diameter | k (coefficient for trace) | Sobel Kernel Diameter | R (cornerness) threshold | Non-max Suppression Window Diameter
+--------------- | ------------------------- | --------------------- | ----------- | -----------------------------------
+7 pixels | 0.05 (seems to be standard) | 3 | 0.01 | 7
+
+Here's an original image:
+![bike1-orig](data/bikes1.png)
+
+And here are the detected corners:
+![bike1-corners](output/bikes1_corners.png)
+
