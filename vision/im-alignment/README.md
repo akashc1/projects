@@ -51,6 +51,7 @@ This part was pretty simple, but I cheated by using the OpenCV's `warpAffine()` 
 ##### Sample
 
 Here's the stitched images:
+
 <img src="./output/bikes_stitched.png" alt="bikes-stitched" width="400"/>
 
 **Summary:** Clearly the images line up very well, so I'd say it worked very well. I'm not sure if there's a metric to evaluate the efficacy of this method.
