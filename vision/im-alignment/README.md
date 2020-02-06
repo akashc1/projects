@@ -1,6 +1,6 @@
 ## Image Alignment, RANSAC Feature Matching, and Stitching
 
-I have worked with features before, but wanted to try to implement a corner detector. I also read a bit about image alignment and ran into RANSAC, which seemed like a cool method. 
+I have worked with features before, but wanted to try to implement a corner detector. I also read a bit about image alignment and ran into RANSAC, which seemed like a cool method. All examples of output are in the `output` directory.
 
 ### Part 1: Corner Detection
 

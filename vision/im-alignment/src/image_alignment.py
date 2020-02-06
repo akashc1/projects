@@ -474,12 +474,6 @@ def baseline_main():
     stitched_image = stitch_images(img1, img2, affine_xform)
     cv.imwrite(output_dir + im_name1[:-1] + '_stitched.png', stitched_image)
 
-# Extra Credit
-def extra_main():
-  pass
-
-
 if __name__ == '__main__':
   baseline_main()
-  # extra_main()
 
