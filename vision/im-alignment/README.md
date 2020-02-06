@@ -12,6 +12,8 @@ Window Diameter | k (coefficient for trace) | Sobel Kernel Diameter | R (cornern
 --------------- | ------------------------- | --------------------- | ----------- | -----------------------------------
 7 pixels | 0.05 (seems to be standard) | 3 | 0.01 | 7
 
+##### Sample
+
 Here's an original image:
 
 <img src="./data/bikes1.png" alt="bike1-orig" width="300"/>
@@ -25,8 +27,17 @@ And here are the detected corners (image blown up so you can actually see the gr
 
 ### Part 2: Feature Matching
 
-This is where I learned about RANSAC, which was intimidating, but not too bad. There were more parameters I had to play around with quite a bit here, and here they are for the example shown:
+This is where I learned about RANSAC, which was intimidating, but not too bad. The basic premise is to have a two-way matching process where features in each image are paired with a feature in the other image if they both are each other's closest region based on Euclidian distance. Then, an N is calculated using the parameters (described below) which determines the number of trials that will be run. For each trial, s matches are randomly chosen, for which an affine transform is calculated using least-squares. For each trial, the inlier count (number of all matches that are inliers with this trial's affine transform) is taken, and the transform with the highest inlier count is taken as the final transformation. There were more parameters I had to play around with quite a bit here, and here they are for the example shown:
 
 Region Window Diameter | p (probability at least one trial has no outliers) | e (approximated outlier proportion in data) | s (number of data points required to define a transform) | Inlier Threshold (max. distance between transformed point and its true match to be considered an inlier)
 ---------------------- | -------------------------------------------------- | ------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------
 9 pixels | 0.999 | 0.5 | 3 | 20
+
+##### Sample
+
+Here's the two images stacked and showing the matches found:
+<img src="./output/bikes_stacked.png" alt="bikes-matches" width="500"/>
+
+And here's the same thing but with outlier matches using the best transform from RANSAC marked as red:
+<img src="./output/bikes_RANSACstacked.png" alt="bikes-Rmatches" width="500"/>
+
