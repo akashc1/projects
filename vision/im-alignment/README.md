@@ -13,8 +13,10 @@ Window Diameter | k (coefficient for trace) | Sobel Kernel Diameter | R (cornern
 7 pixels | 0.05 (seems to be standard) | 3 | 0.01 | 7
 
 Here's an original image:
-![bike1-orig](data/bikes1.png)
+
+<img src="./data/bikes1.png" alt="bike1-orig" width="300"/>
 
 And here are the detected corners:
-![bike1-corners](output/bikes1_corners.png)
+
+<img src="./output/bikes1_corners.png" alt="bike1-corners" width="300"/>
 
