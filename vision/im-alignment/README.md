@@ -36,8 +36,21 @@ Region Window Diameter | p (probability at least one trial has no outliers) | e 
 ##### Sample
 
 Here's the two images stacked and showing the matches found:
-<img src="./output/bikes_stacked.png" alt="bikes-matches" width="500"/>
+<img src="./output/bikes_stacked.png" alt="bikes-matches" width="600"/>
 
 And here's the same thing but with outlier matches using the best transform from RANSAC marked as red:
-<img src="./output/bikes_RANSACstacked.png" alt="bikes-Rmatches" width="500"/>
+<img src="./output/bikes_RANSACstacked.png" alt="bikes-Rmatches" width="600"/>
 
+**Summary:** What indicated that it worked well is that the inlier matches (which stay blue) are all in the same direction and have similar magnitude.
+
+
+### Part 3: Stitching
+
+This part was pretty simple, but I cheated by using the OpenCV's `warpAffine()` method to apply the actual transformation. Beyond that, the blending was just done with a 50-50 weighted average between the two images.
+
+##### Sample
+
+Here's the stitched images:
+<img src="./output/bikes_stitched.png" alt="bikes-stitched" width="400"/>
+
+**Summary:** Clearly the images line up very well, so I'd say it worked very well. I'm not sure if there's a metric to evaluate the efficacy of this method.
