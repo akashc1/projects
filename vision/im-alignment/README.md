@@ -20,3 +20,13 @@ And here are the detected corners (image blown up so you can actually see the gr
 
 <img src="./output/bikes1_corners.png" alt="bike1-corners" width="500"/>
 
+**Summary:** I think it worked very well with these parameters, but for different size corners the parameters may have to be changed since corners are not size-invariant.
+
+
+### Part 2: Feature Matching
+
+This is where I learned about RANSAC, which was intimidating, but not too bad. There were more parameters I had to play around with quite a bit here, and here they are for the example shown:
+
+Region Window Diameter | p (probability at least one trial has no outliers) | e (approximated outlier proportion in data) | s (number of data points required to define a transform) | Inlier Threshold (max. distance between transformed point and its true match to be considered an inlier)
+---------------------- | -------------------------------------------------- | ------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------
+9 pixels | 0.999 | 0.5 | 3 | 20
