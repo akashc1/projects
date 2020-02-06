@@ -16,7 +16,7 @@ Here's an original image:
 
 <img src="./data/bikes1.png" alt="bike1-orig" width="300"/>
 
-And here are the detected corners:
+And here are the detected corners (image blown up so you can actually see the green dots):
 
-<img src="./output/bikes1_corners.png" alt="bike1-corners" width="300"/>
+<img src="./output/bikes1_corners.png" alt="bike1-corners" width="500"/>
 
