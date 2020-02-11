@@ -9,9 +9,11 @@ Labeling seemed pretty straightforward and useful as a rudimentary object detect
 ##### Results
 
 Here's the original image: 
+
 ![coins-orig](data/coins.png)
 
 And here's the labeled image with each connected component with a different label. It may be hard to see some of the coins since they have low labels which translate to darker colors:
+
 ![coins-labeled](output/coins_labeled.png)
 
 
@@ -21,7 +23,8 @@ I learned about Hough line/circle detection and was intriguied by the voting met
 
 ##### Results
 
-Here's the coincs with detected circles in green.
+Here's the coins with detected circles in green.
+
 ![coins-circles](output/coins_circles.png)
 
 
@@ -32,5 +35,14 @@ Template matching is a very simple method of finding objects in an image, but it
 ##### Results
 
 Here's the original images and the respective templates:
+
 ![king](data/king.png) ![face](data/face.png)
 
+![text](data/text.png) ![letter](data/letter.png)
+
+
+And here are the same images with the matched templates placed in bounding boxes:
+
+![king-matched](output/king.png)
+
+![text-matched](output/text.png)
