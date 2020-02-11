@@ -1,22 +1,26 @@
-#### [Image Labeling, Hough Circle Detection, Template Matching](./label-circ-match)
+## [Image Labeling, Hough Circle Detection, Template Matching]
 
-This implementation of image labeling is pretty quick and can identify individual objects in an image. This is not a learning-based approach, rather a standard sequential labeling algorithm.
+These were some basic computer vision techniques that seemed interesting and that I wanted to try. There are probably libraries like OpenCV that do these more efficiently, but I wanted to do this for implementation practice.
 
-![labeling](./label-circ-match/output/coins_labeled.png)
+### Part 1: Image Labeling
 
-The circle detection was just based on my interest in the Hough voting methods for circle/line detection, and the circle case seemed more interesting to me.
+Labeling seemed pretty straightforward and useful as a rudimentary object detection method. It's based on binary image processing, and here I implemented the [sequential labeling method for connected components](https://en.wikipedia.org/wiki/Connected-component_labeling)
 
-![circ-detect](./label-circ-match/output/coins_circles.png)
+##### Results
 
-Template matching seemed very straightforward to me but as I expected, there were the edge cases I had to think about which was a quick and interesting challenge.
+Here's the original image: 
+![coins-orig](data/coins.png)
 
-![temp-match1](./label-circ-match/output/text.png)
-![temp-match2](./label-circ-match/output/king.png)
+And here's the labeled image with each connected component with a different label. It may be hard to see some of the coins since they have low labels which translate to darker colors:
+![coins-labeled](output/coins_labeled.png)
 
-#### [Image Alignment, RANSAC Feature Matching, and Stitching](./im-alignment)
 
-This part came from my interest in image transformations and feature extraction. I implemented a Harris corner detector, a RANSAC algorithm to match corners from 2 images, and a least-squares method to solve for a transformation to align two given images. There's also a simple method of stitching the aligned images together.
+### Part 2: Circle Detection
 
-![align-stack](./im-alignment/output/leuven_stacked.png)
-![align-ransac](./im-alignment/output/leuven_RANSACstacked.png)
-![align-stitch](./im-alignment/output/leuven_stitched.png)
+I learned about Hough line/circle detection and was intriguied by the voting method in a parameter space. I wanted to try implementing this with circles. It was pretty starightforward, and despite a pretty inefficient implementation, it runs pretty quick. An improvement I would make would be to add non-maximum suppression to make sure that for one ground truth circle, there aren't multiple circles identified for it.
+
+##### Results
+
+Here's the coincs with detected circles in green.
+![coins-circles](output/coins_circles.png)
+
