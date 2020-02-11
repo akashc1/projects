@@ -5,4 +5,4 @@ These are some of the simplest models in machine learning, and my real intro to 
 
 ### Part 1: Perceptron
 
-This is a straightforward perceptron with the learning rule of $$w_i = 1$$
+This is a straightforward perceptron with the learning rule of $w_i = 1$
