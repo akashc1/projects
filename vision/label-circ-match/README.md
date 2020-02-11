@@ -1,4 +1,4 @@
-## [Image Labeling, Hough Circle Detection, Template Matching]
+## Image Labeling, Hough Circle Detection, Template Matching
 
 These were some basic computer vision techniques that seemed interesting and that I wanted to try. There are probably libraries like OpenCV that do these more efficiently, but I wanted to do this for implementation practice.
 
