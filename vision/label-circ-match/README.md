@@ -24,3 +24,13 @@ I learned about Hough line/circle detection and was intriguied by the voting met
 Here's the coincs with detected circles in green.
 ![coins-circles](output/coins_circles.png)
 
+
+### Part 3: Template Matching
+
+Template matching is a very simple method of finding objects in an image, but it has several flaws. The most significant is that it is not robust to variance in scale or rotation. Nonethelesss, I wanted to try implementing a normalized cross-correlation method (which ended up being pretty much the entire task).
+
+##### Results
+
+Here's the original images and the respective templates:
+![king](data/king.png) ![face](data/face.png)
+
