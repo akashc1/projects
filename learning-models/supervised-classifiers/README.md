@@ -8,6 +8,6 @@ This is a straightforward perceptron with the learning rule based on gradient de
 
 ### Part 2: [Logistic Regression](https://en.wikipedia.org/wiki/Logistic_regression)
 
-This part was a cool extension of perceptron since it has an additional layer of complexity with the logistic function. This also introduces the [softmax function](https://en.wikipedia.org/wiki/Softmax_function) to create a valid probability distribution, which make things a little bit harder.
+This part was a cool extension of perceptron since it has an additional layer of complexity with the logistic function. This also introduces the [softmax function](https://en.wikipedia.org/wiki/Softmax_function) to create a valid probability distribution, which make things a little bit harder, especially becuse you have to worry about numerical stability with exponentiation.
 
 
