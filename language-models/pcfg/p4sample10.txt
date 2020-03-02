@@ -1,0 +1,133 @@
+(ROOT (S (NP (Det the)
+             (Noun desk))
+         (VP (VP (Verb kissed)
+                 (NP (Det the)
+                     (Noun president)))
+             (PP (Prep on)
+                 (NP (Det the)
+                     (Noun president)))))
+      .)
+(ROOT (S that
+         (S (NP (NP (Det the)
+                    (Noun pickle))
+                (Conj or)
+                (NP Sally))
+            (VP (ITV worked)))
+         (TV perplexed)
+         (NP (NP (Det every)
+                 (Noun sandwich))
+             (PP (Prep on)
+                 (NP Sally))))
+      .)
+(ROOT (S (NP (Det every)
+             (Noun (Adj fine)
+                   (Noun proposal)))
+         (VP (VP (Verb wanted)
+                 (NP Sally))
+             (PP (Prep on)
+                 (NP (Det the)
+                     (Noun proposal)))))
+      .)
+(ROOT (S (NP (Det every)
+             (Noun pickle))
+         (VP (ITV sighed)))
+      !)
+(ROOT is
+      it
+      true
+      that
+      (S (NP (Det a)
+             (Noun sandwich))
+         (VP (ITV worked)))
+      ?)
+(ROOT is
+      it
+      true
+      that
+      (S (NP (Det every)
+             (Noun (Adj fine)
+                   (Noun (Adj fine)
+                         (Noun pickle))))
+         (VP (VP (ThatV forgot)
+                 that
+                 (S (NP (NP Sally)
+                        (PP (Prep with)
+                            (NP (Det a)
+                                (Noun chief
+                                      of
+                                      staff))))
+                    (VP (ITV worked))))
+             (PP (Prep on)
+                 (NP (Det the)
+                     (Noun pickle)))))
+      ?)
+(ROOT (S it
+         (TV perplexed)
+         (NP (Det the)
+             (Noun sandwich))
+         that
+         (S (NP (Det every)
+                (Noun pickle))
+            (VP (ITV worked))))
+      !)
+(ROOT is
+      it
+      true
+      that
+      (S (NP Sally)
+         (VP (ThatV thought)
+             that
+             (S (NP (Det a)
+                    (Noun (Adj delicious)
+                          (Noun floor)))
+                (VP (ThatV remembered)
+                    that
+                    (S (NP (Det every)
+                           (Noun proposal))
+                       (VP (VP (VP (ITV worked))
+                               (PP (Prep under)
+                                   (NP (Det a)
+                                       (Noun proposal))))
+                           (PP (Prep under)
+                               (NP (Det a)
+                                   (Noun pickle)))))))))
+      ?)
+(ROOT is
+      it
+      true
+      that
+      (S it
+         (TV perplexed)
+         (NP (Det every)
+             (Noun (Adj fine)
+                   (Noun (Adj perplexed)
+                         (Noun (Adj fine)
+                               (Noun (Adj (Adv very)
+                                          (Adj fine))
+                                     (Noun (Adj fine)
+                                           (Noun (Adj delicious)
+                                                 (Noun floor))))))))
+         that
+         (S (NP Sally)
+            (VP (VP (VP (ITV sighed))
+                    (PP (Prep in)
+                        (NP (Det every)
+                            (Noun sandwich))))
+                (PP (Prep with)
+                    (NP (Det every)
+                        (Noun (Adj (Adv very)
+                                   (Adj (Adv very)
+                                        (Adj delicious)))
+                              (Noun sandwich)))))))
+      ?)
+(ROOT is
+      it
+      true
+      that
+      (S (NP (Det a)
+             (Noun (Adj perplexed)
+                   (Noun president)))
+         (VP (Verb worked)
+             (NP (Det a)
+                 (Noun sandwich))))
+      ?)

@@ -1,0 +1,180 @@
+# Rules for creating full sentences.
+
+1	ROOT	S .
+1	ROOT	S !
+1	ROOT	is it true that S ?
+
+# The basic grammar rules.
+#    S  = sentence
+#    NP = noun phrase
+#    VP = verb phrase
+#    PP = prepositional phrase
+#    Det = determiner (sometimes called "article")
+#    Prep = preposition
+#    Adj = adjective
+
+1	S	NP VP
+1	VP	Verb NP
+5	NP	Det Noun
+1	NP	NP PP
+1	PP	Prep NP
+5	Noun	Adj Noun
+
+# New grammar rules.
+# ITV = intransitive verb
+# TV = transitive verb
+# ThatV = verbs that function like thought and are followed by that
+# Conj = conjunction
+# Adv = adverb
+
+1	NP	NP Conj NP
+1	Verb	Verb Conj Verb
+1	VP	ITV
+1	VP	ThatV that S
+1	S	it TV NP that S
+1	S	that S TV NP
+1	VP	VP PP
+1	Adj	Adv Adj
+
+# In order to account for a and an, we created preterminals to signify
+# nouns, adjectives, and adverbs that start with a vowel. In our grammar,
+# the default is to start with a consonant. We then separated a and an
+# from the original Det category and gave them their own rules. The
+# following rules then make sure that an is followed by a word that
+# begins with a vowel.
+
+1	NP	Det VNoun
+1	NP	a Noun
+1	NP	an VNoun
+1       VNoun   VAdv Noun
+1       VNoun   VAdv VNoun
+1       VAdj    VAdv Adj
+1       VAdj    VAdv VAdj
+1       Adj     Adv VAdj
+1       Noun    Adj VNoun
+
+# To handle yes/no questions, we created some new grammar rules and 
+# nonterminals.
+# QW = question word
+# QS = question sentence
+# QVP = question verb phrase
+# PVerb = present tense verb
+# PTV = present tense transitive verb
+# PITV = present tense intransitive verb
+# PThatV = present tense ThatV
+# We found that questions follow nearly the same parttern as other
+# sentences, with the exception of the verb tense and leading with
+# a question word. Thus, we replicated most of the rules with this
+# change.
+
+1	ROOT	QW QS ?
+1	QS	NP QVP
+1	QS	it PTV NP that S
+1	QVP	PVerb NP
+1	PVerb	PVerb Conj PVerb
+1	QVP	PITV
+1	QVP	PThatV that S
+1	QVP	QVP PP
+
+# Question words
+# These are the leading words for the yes/no questions
+
+1 QW will
+1 QW does
+1 QW can
+1 QW did
+1 QW should
+1 QW would
+
+# Present tense verb bank
+# PVerb: Analog to Verb
+
+1 PVerb  eat
+1 PVerb  want
+1 PVerb  kiss
+1 PVerb  understand
+1 PVerb  pickle
+1 PVerb  work
+
+# PITV: Analog to ITV
+
+1 PITV sigh
+1 PITV eat
+1 PITV work
+
+# PTV: Analog to TV
+
+1 PTV  perplex
+1 PTV  confuse
+1 PTV  scare
+
+# PThatV: Analog to ThatV
+
+1 PThatV think
+1 PThatV remember
+1 PThatV forget
+1 PThatV consider
+
+# Vocabulary with new additions
+
+1	NP	Sally
+
+1	Adv	very
+
+1       VAdv    extremely
+1       VAdv    adamantly
+
+1	ITV	sighed
+1	ITV	ate
+1	ITV	worked
+
+1	TV	perplexed
+1	TV	confused
+1	TV	scared
+
+1	ThatV	thought
+1	ThatV	remembered
+1	ThatV	forgot
+1	ThatV	considered
+
+1	Conj	and
+1	Conj	or
+
+1	Verb	ate
+1	Verb	wanted
+1	Verb	kissed
+1	Verb	understood
+1	Verb	pickled
+1	Verb	worked
+
+1	Det	the
+1	Det	every
+
+1       VNoun   apple
+1       VNoun   acrobat
+1       VNoun   elephant
+1       VNoun   octopus
+1       VNoun   hour
+
+1	Noun	president
+1	Noun	sandwich
+1	Noun	pickle
+1	Noun	chief of staff
+1	Noun	floor
+1	Noun	proposal
+1	Noun	desk
+
+1       VAdj    awesome
+1       VAdj    empty
+1       VAdj    excited
+1	VAdj	ambivalent
+
+1	Adj	fine
+1	Adj	delicious
+1	Adj	perplexed
+1	Adj	pickled
+
+1	Prep	with
+1	Prep	on
+1	Prep	under
+1	Prep	in

@@ -1,0 +1,88 @@
+# Rules for creating full sentences.
+
+1	ROOT	S .
+1	ROOT	S !
+1	ROOT	is it true that S ?
+
+# The basic grammar rules.
+#    S  = sentence
+#    NP = noun phrase
+#    VP = verb phrase
+#    PP = prepositional phrase
+#    Det = determiner (sometimes called "article")
+#    Prep = preposition
+#    Adj = adjective
+
+1	S	NP VP
+1	VP	Verb NP
+10	NP	Det Noun
+1	NP	NP PP
+1	PP	Prep NP
+2	Noun	Adj Noun
+
+# New grammar rules.
+# ITV = intransitive verb
+# TV = transitive verb
+# ThatV = verbs that function like thought and are followed by that
+# Conj = conjunction
+# Adv = adverb
+
+1	NP	NP Conj NP
+1	Verb	Verb Conj Verb
+1	VP	ITV
+1	VP	ThatV that S
+0.2	S	it TV NP that S
+0.2	S	that S TV NP
+1	VP	VP PP
+1	Adj	Adv Adj
+
+# Vocabulary with new additions
+1	NP	Sally
+
+1	Adv	very
+
+1	ITV	sighed
+1	ITV	worked
+1	ITV	ate
+
+1	TV	perplexed
+1	TV	confused
+1	TV	scared
+
+1	ThatV	thought
+1	ThatV	remembered
+1	ThatV	forgot
+1	ThatV	considered
+
+1	Conj	and
+1	Conj	or
+
+1	Verb	ate
+1	Verb	wanted
+1	Verb	kissed
+1	Verb	understood
+1	Verb	pickled
+1	Verb	worked
+
+1	Det	the
+1	Det	a
+1	Det	every
+
+1	Noun	president
+1	Noun	sandwich
+1	Noun	pickle
+1	Noun	chief of staff
+1	Noun	floor
+1	Noun	proposal
+1	Noun	desk
+
+1	Adj	fine
+1	Adj	delicious
+1	Adj	perplexed
+1	Adj	pickled
+
+1	Prep	with
+1	Prep	on
+1	Prep	under
+1	Prep	in
+

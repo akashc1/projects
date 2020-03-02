@@ -1,0 +1,60 @@
+#!/bin/bash
+conda activate autograder-3
+
+tempfile="g.gr"
+
+if [ $# == 1 ]
+then
+
+  GRAMMAR=$1
+  cp $GRAMMAR $tempfile
+
+  # clean up grammar file
+  sed -i 's/#.*$//' $tempfile
+  sed -i '/^$/d' $tempfile
+  python3 problem2.py $tempfile 1
+
+  rm $tempfile
+
+elif [ $# == 2 ] && [ $1 == '-t' ]
+then
+
+  GRAMMAR=$2
+  cp $GRAMMAR $tempfile
+
+  # clean up grammar file
+  sed -i 's/#.*$//' $tempfile
+  sed -i '/^$/d' $tempfile
+  python3 problem4.py $tempfile 1
+  rm $tempfile
+
+elif [ $# == 2 ]
+then
+
+  GRAMMAR=$1
+  SENTENCES=$2
+  cp $GRAMMAR $tempfile 
+
+  sed -i 's/#.*$//' $tempfile
+  sed -i '/^$/d' $tempfile
+  python3 problem2.py $tempfile $SENTENCES
+
+  rm $tempfile
+
+elif [ $# == 3 ] && [ $1 == '-t' ]
+then
+ 
+  GRAMMAR=$2
+  SENTENCES=$3
+  cp $GRAMMAR $tempfile
+
+  sed -i 's/#.*$//' $tempfile
+  sed -i '/^$/d' $tempfile
+  python3 problem4.py $tempfile $SENTENCES
+  rm $tempfile
+
+else
+
+  echo "ERROR: invalid arguments"
+
+fi
