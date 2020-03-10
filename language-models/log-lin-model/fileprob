@@ -1,0 +1,14 @@
+#!/bin/bash
+
+train_file1="english_spanish/train/en.1K"
+train_file2="english_spanish/train/sp.1K"
+
+smoother=$1
+
+test_file1="english_spanish/dev/english/*/*"
+test_file2="english_spanish/dev/spanish/*/*"
+
+lexicon="data/lexicons/words-10.txt"
+python3 fileprob.py TRAIN $smoother $lexicon $train_file2
+
+python3 fileprob.py TEST $smoother $lexicon $train_file2 $test_file2

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+lexicon="data/lexicons/chars-10.txt"
+
+#smoother="backoff_add"
+smoother="loglinear"
+smoother+=$1
+train_file1="english_spanish/train/en.1K"
+train_file2="english_spanish/train/sp.1K"
+
+prior=0.7
+test_files1="english_spanish/dev/english/*/*"
+test_files2="english_spanish/dev/spanish/*/*"
+
+#train
+./textcat TRAIN $smoother $lexicon $train_file1 $train_file2
+
+#test
+./textcat TEST $smoother $lexicon $train_file1 $train_file2 $prior $test_files1 $test_files2
+
