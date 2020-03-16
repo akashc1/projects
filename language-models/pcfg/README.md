@@ -38,3 +38,5 @@ I created a program called `randsent` which uses the CFG to create sentences usi
 The numbers at the beginning of each line provide a weighting I implemented, with a larger weight resulting in a larger probability that that specific rule is chosen (out of all rules with the same parent ie. ROOT). All sentences are chosen to begin with ROOT, since this is an assumption we can make.
 
 I then played around with the weights to make it more _probabilistic_ - this was especially necessary because I included some recursive rules (NP -> NP, PP), and I wanted to make this more realistic.
+
+More coming...
