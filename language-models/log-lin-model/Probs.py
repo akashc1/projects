@@ -2,8 +2,6 @@
 # Module to estimate n-gram probabilities.
 
 
-# Refactored by Arya McCarthy <xkcd@jhu.edu> because inheritance is cool
-# and so is separatiing business logic from other stuff.  (9/19/2019)
 
 import logging
 import math
