@@ -1,0 +1,7 @@
+#!/bin/bash
+
+TRAINFILE='data/entrain'
+TESTFILE='data/entest'
+RAWFILE='data/icraw'
+
+python vtag.py $TRAINFILE $TESTFILE #$RAWFILE
