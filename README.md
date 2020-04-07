@@ -17,3 +17,5 @@ Some vision tasks I have taken on. Most of it is lower level stuff I implemented
 
 ##### [Software Engineering](https://github.com/akashc1/projects/tree/master/swe-practice)
 A variety of general programming tasks I've done to get better. Mostly in C/C++, they vary from binary operations to an autocorrect algorithm, image processing in C, and k-means clustering.
+
+##### [Language Models](https://github.com/akashc1/projects/tree/master/language-models)
