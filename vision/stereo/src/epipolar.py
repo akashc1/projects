@@ -1,8 +1,6 @@
 """
 Akash Chaurasia
 achaura1@jhu.edu
-JHU CS461 Fall 2019
-Homework 3
 """
 
 import numpy as np
@@ -160,11 +158,11 @@ def stack_images(image1, image2):
 
 def main():
 
-    matches = get_matches("data/matches.txt")
+    matches = get_matches("../data/matches.txt")
     F, inliers = get_fundamental_matrix(matches)
 
-    im_l = cv.imread("data/hopkins1.jpg")
-    im_r = cv.imread("data/hopkins2.jpg")
+    im_l = cv.imread("../data/hopkins1.jpg")
+    im_r = cv.imread("../data/hopkins2.jpg")
 
     im_r_epi, rand_inds = draw_epi_lines(F, matches, inliers, im_r)
     for ind in rand_inds:
@@ -173,7 +171,7 @@ def main():
         cv.circle(im_l, pt, 2, (0, 255, 0), -1)
 
     both_images = stack_images(im_l, im_r_epi)
-    cv.imwrite("output/hopkins_epi.jpg", both_images)
+    cv.imwrite("../output/hopkins_epi.jpg", both_images)
 
     print(F)
 
